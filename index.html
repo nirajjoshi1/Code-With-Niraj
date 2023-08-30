@@ -1,0 +1,607 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+   <!-- ADDING CSS FILE -->
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+
+ <!-- ADDING FONTAWESOME LINK -->
+
+ <link rel="stylesheet" type="text/css"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Welcome to Code WIth Niraj.
+   A website for coding help. It is a website where you will
+    get best Services like as Source codes of websites and others also. ">
+  <meta name="keywords" content="HTML, CSS, JavaScript, 
+  Web Development, PHP, Code With Niraj, Website">
+  <meta name="author" content="Niraj Joshi">
+  <meta name="theme-color"
+  content="black">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <title>Code With Niraj</title>
+</head>
+
+<body style="margin:0%; padding:0%; background-color:reds">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand">/>Code with Niraj</a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+        </li>
+
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Services
+
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#Source Code">Source Code</a>
+            <a class="dropdown-item" href="#Web Development">Web Development</a>
+            <a class="dropdown-item" href="#Coding">Coding</a>
+            <a class="dropdown-item" href="#Game Development">Game Development</a>
+          </div>
+        </li>
+
+
+        <li class="nav-item">
+          <a class="nav-link" href="Portfolio.html">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#About">About</a>
+        </li>
+
+
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact Me</a>
+        </li>
+
+
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+      </form>
+      <div class="mx-2">
+        <button class="btn btn-danger" data-toggle="modal" data-target="#loginModal">Login</button>
+        <button class="btn btn-danger" data-toggle="modal" data-target="#signupModal">SignUp</button>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Login to Code With NIraj</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <small id="emailHelp" class="form-text text-muted">We'll never
+                share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Sign Up Modal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Get a Code With Niraj Account</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="form-group">
+              <label for="cexampleInputPassword1">Confirm Password</label>
+              <input type="password" class="form-control" id="cexampleInputPassword1">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Creat Account</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+   <!-- <h1 style="color: black ; background-color: white;">Coding is <span> </span></h1>  -->
+
+  <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="1.webp" class="d-block w-100" alt="Image" width="640" height="360">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Welcome to Code With Niraj</h2>
+          <p>Technology News, Web Development and Game Development</p>
+          <button class="btn btn-danger">Technology</button>
+          <button class="btn btn-primary">Web Development</button>
+          <button class="btn btn-success">Game Development</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="2.webp" class="d-block w-100" alt="Thumnel" width="640" height="360">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>The Best Coding Website</h2>
+          <p>Technology News, Web Development and Game Development</p>
+          <button class="btn btn-danger">Technology</button>
+          <button class="btn btn-primary">Web Development</button>
+          <button class="btn btn-success">Game Development</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="3.webp" class="d-block w-100" alt="Thumnel1" width="640" height="360">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Award Winning Website</h2>
+          <p>Technology News, Development and Trends</p>
+          <button class="btn btn-danger">Technology</button>
+          <button class="btn btn-primary">Web Development</button>
+          <button class="btn btn-success">Game Development</button>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+  <div class="container my-4">
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row no-gutters border rounded overflow-hidden
+           flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">World</strong>
+            <h3 class="mb-0">Global Conferences</h3>
+            <div class="mb-1 text-muted">Oct 13</div>
+            <p class="card-text mb-auto">@#</p>
+            <a href="#" class="stretched-link" style="text-decoration: none;">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="thumb1.WebP" alt="Global Conferences">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row no-gutters border rounded overflow-hidden
+          flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success">Design</strong>
+            <h3 class="mb-0">Learn Designing</h3>
+            <div class="mb-1 text-muted">Oct 14</div>
+            <p class="mb-auto">@#</p>
+            <a href="#" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250"
+              src="100.webp" alt="Lapotp">
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div
+          class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-danger">FrontEnd</strong>
+            <h3 class="mb-0">Learn Coding</h3>
+            <div class="mb-1 text-muted">Oct 15</div>
+            <p class="card-text mb-auto">@#</p>
+            <a href="#" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="thumb2.webp" alt="Coding">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div
+          class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-warning">Python</strong>
+            <h3 class="mb-0">Learn Python</h3>
+            <div class="mb-1 text-muted">Oct 16</div>
+            <p class="mb-auto">@#.</p>
+            <a href="#" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250"
+              src="thumb3.webp"
+              alt="Python">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <br> <br>
+
+  <section id="About">
+  <center>
+    <h2> About Me</h2>
+  </center> </section>
+  <div class="container my-4">
+    <div class="row featurette d-flex justify-content-center align-items-center">
+      <div class="col-md-7">
+        <h3 class="featurette-heading"> <span class="text-muted"> Welcome to my corner of the internet!</span>
+        </h3>
+
+        <p class="lead">
+          Hello! I'm Niraj, a web designer and coder.I am from Kanchanpur, Nepal.
+
+          Here's a little bit about me and what I do:
+        </p>
+      </div>
+      <div class="col-md-5">
+        <img class="img-fluid" src="about-3.webp" alt="ABout" width="640" height="360">
+
+      </div>
+    </div>
+    <div class="row featurette d-flex justify-content-center align-items-center">
+      <div class="col-md-7 order-md-2">
+        <h3 class="featurette-heading"><span class="text-muted">
+            When I started web designing and coding? </span>
+        </h3>
+        <p class="lead">I am designing websites and coding from 2022. I'm trying to give my best in
+          designing and coding. I will try to help you by giving my best.
+          "Code is like humor. When you have to explain it, it’s bad.
+        </p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img class="img-fluid" src="about-2.WebP" alt="About" width="640" height="360">
+
+
+      </div>
+    </div> <br> <br>
+
+    <div class="row featurette d-flex justify-content-center align-items-center">
+      <div class="col-md-7">
+        <h3 class="featurette-heading"> <span class="text-muted">Background and Experience:</span></h3>
+
+        <p class="lead">
+
+
+          I have always been passionate about designing websites and games.
+          I haven't any degree or any higher qualification.
+          But, I have some skills in web designing and coding. Over the years,
+          I've had the privilege of working with some Clientsand Companies and
+          contributing to projects that have Positive Impact or Achievements.
+
+        </p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img class="img-fluid" src="about-5 (1).webp" alt="About" width="640" height="360">
+
+
+      </div>
+    </div>
+    <br> <br>
+    <div class="row featurette d-flex justify-content-center align-items-center">
+      <div class="col-md-7 order-md-2">
+        <h3 class="featurette-heading"><span class="text-muted">
+            What I DO? </span>
+        </h3>
+        <p class="lead">As a web designer, my focus is on that,
+          how can I provide best websites to clients.
+
+          I am dedicated to delivering best websites to customers.
+          I believe in the power of hard work and strive that
+          how to make a different than other in this competitive world.
+        </p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img class="img-fluid" src="about-7 (1).webp" alt="About" width="640" height="360">
+
+
+      </div>
+    </div> <br> <br>
+
+
+    <div class="row featurette d-flex justify-content-center align-items-center">
+      <div class="col-md-7">
+        <h3 class="featurette-heading"> <span class="text-muted">
+          Approach and Values:</span></h3>
+
+        <p class="lead" style="color :black">
+
+          My approach is to Strive for Simplicity and Elegance.
+        <h4> <ion-icon name="checkmark-circle"></ion-icon>I follow these values for sucesss: </h4>
+        <ion-icon name="arrow-forward"></ion-icon> Determination<br>
+        <ion-icon name="arrow-forward"></ion-icon> Hard Work<br>
+        <ion-icon name="arrow-forward"></ion-icon> Perseverance<br>
+        <ion-icon name="arrow-forward"></ion-icon> Continuous Learning<br>
+        <ion-icon name="arrow-forward"></ion-icon> Adaptability<br>
+        <ion-icon name="arrow-forward"></ion-icon> Resilience<br>
+        <ion-icon name="arrow-forward"></ion-icon> Self-Discipline<br>
+        <ion-icon name="arrow-forward"></ion-icon> Positive Attitude<br>
+        <ion-icon name="arrow-forward"></ion-icon> Goal Setting<br>
+        <ion-icon name="arrow-forward"></ion-icon>Time Management <br>
+
+
+        </p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img class="img-fluid" src="about-1.webp" alt="About" width="640" height="360">
+
+
+      </div>
+    </div>
+    <br> <br>
+
+    <div class="row featurette d-flex justify-content-center align-items-center">
+      <div class="col-md-7 order-md-2">
+        <h3 class="featurette-heading"><span class="text-muted">
+            Personal Touch </span>
+        </h3>
+        <p>
+          When I'm free from work, I embrace my personal
+          touch by engaging in activities that truly reflect who I am.
+          These moments allow me to recharge, explore my passions,
+          and find inspiration in the things I love. Whether it's
+          through hobbies, creative pursuits, or spending quality
+          time with loved ones.
+          I ensure that my free time resonates with my unique personality and values.
+          You can find me playing games, watching movies,
+          editing videos/pictures and reading book.
+          I enjoy games, books, etc, as they provide me personal
+          benefits and joys. I believe that a balanced life contributes
+          to my creativity and effectiveness in my works.
+        </p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img class="img-fluid" src="9.webp" alt="About" width="640" height="360">
+
+
+      </div>
+    </div> <br> <br>
+
+    <div class="row featurette d-flex justify-content-center align-items-center">
+      <div class="col-md-7">
+        <h3 class="featurette-heading"> <span class="text-muted">Let's Connect:</span></h3>
+
+        <p class="lead" style="color :black">
+
+          I'm always excited to connect with fellow.
+          If you're interested in Networking, have questions
+          about web designing and coding, or just want to chat for
+          sharing knowledge information, feel free to Contact me through
+          Email, Social Media, etc.
+        </p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img class="img-fluid" src="connect.webp" alt="About"width="640" height="360">
+      </div>
+    </div>
+  </div>
+  <h5 style="color :black; padding-left:2%"> Thank you for visiting my website and taking the time to learn
+    a bit about me. I look forward that how can I help you.</h5>
+  <hr>
+  </br>
+
+
+
+  <center>
+    <h2>
+      Services
+    </h2>
+  </center>
+
+  <section id="Source Code">
+    <h5> <ion-icon name="checkmark-circle"></ion-icon> Source Codes:</h5>
+  </section>
+
+  <ion-icon name="arrow-forward"></ion-icon>Some Basic Pythone Games: <br>
+    <ion-icon name="snow-outline"></ion-icon>
+    <a href="https://drive.google.com/file/d/1A45ufA462h5wklgRGut9F9GE4K4T2y6W/view?usp=sharing" 
+    target="_blank"> Shotting Game </a> <br>
+    <ion-icon name="snow-outline">
+    </ion-icon>
+    <a href="https://drive.google.com/file/d/1t2nw52T3FxzL8sQf3KdkI2w8jrqnMgw2/view?usp=sharing" 
+   target="_blank"> Snake Game </a> <br>
+
+ <ion-icon name="arrow-forward"></ion-icon> HTML And CSS: <br>
+ <ion-icon name="snow-outline"></ion-icon>
+  <a href="https://drive.google.com/drive/folders/1Mh9cradDK1InxcjLbMavv0vFwyLvNaPJ?usp=drive_link" target="_blank">
+    For Making Responsive And Professional Portfolio <br>
+  </a>
+  <ion-icon name="snow-outline"></ion-icon>
+  <a href="https://drive.google.com/drive/folders/19sci_C1qv9HmONee2gu0gZB59zN_2StD?usp=sharing" target="_blank">
+    For Making Responsive And Professional Contact Form
+  </a>
+  </div>
+
+  <section id="Web Development">
+    <h5><ion-icon name="checkmark-circle"></ion-icon>Web Development:</h5>
+  </section>
+  <span>
+    <ion-icon name="arrow-forward"></ion-icon>User-Centered Design <br>
+    <ion-icon name="arrow-forward"></ion-icon>Attention to Detail <br>
+    <ion-icon name="arrow-forward"></ion-icon>Innovation<br>
+    <ion-icon name="arrow-forward"></ion-icon>Functionality<br>
+    <ion-icon name="arrow-forward"></ion-icon>Responsive Design<br>
+    <ion-icon name="arrow-forward"></ion-icon>Usability Testing<br>
+    <ion-icon name="arrow-forward"></ion-icon>Collaboration<br>
+    <ion-icon name="arrow-forward"></ion-icon> Accessibility<br>
+    <ion-icon name="arrow-forward"></ion-icon> Aesthetic Consistency<br>
+    <ion-icon name="arrow-forward"></ion-icon>Visual Hierarchy<br>
+  </span>
+  <section id="Coding">
+    <h5><ion-icon name="checkmark-circle"></ion-icon>Coding:</h5>
+  </section>
+<span>
+  <ion-icon name="arrow-forward"></ion-icon> Code Quality<br>
+  <ion-icon name="arrow-forward"></ion-icon> Problem Solving<br>
+  <ion-icon name="arrow-forward"></ion-icon> Continuous Learning<br>
+  <ion-icon name="arrow-forward"></ion-icon>Collaboration<br>
+  <ion-icon name="arrow-forward"></ion-icon> Adaptability<br>
+  <ion-icon name="arrow-forward"></ion-icon>Efficiency<br>
+  <ion-icon name="arrow-forward"></ion-icon>Version Control<br>
+  <ion-icon name="arrow-forward"></ion-icon> Testing and Debugging<br>
+  <ion-icon name="arrow-forward"></ion-icon> Documentation<br>
+  <ion-icon name="arrow-forward"></ion-icon> Security Awareness<br>
+</span>
+<span>
+  <section id="Game Development">
+    <h5><ion-icon name="checkmark-circle"></ion-icon>Game Development: </h5>
+  </section>
+
+  <ion-icon name="arrow-forward"></ion-icon> Innovation in Gameplay <br>
+  <ion-icon name="arrow-forward"></ion-icon> Player Engagement<br>
+  <ion-icon name="arrow-forward"></ion-icon> Balancing Challenges<br>
+  <ion-icon name="arrow-forward"></ion-icon> Adaptability to Player Feedback<br>
+  <ion-icon name="arrow-forward"></ion-icon> Thematic Consistency<br>
+  <ion-icon name="arrow-forward"></ion-icon> Game Mechanics Design<br>
+  <ion-icon name="arrow-forward"></ion-icon> Playtesting<br>
+  <ion-icon name="arrow-forward"></ion-icon> Optimization for Performance<br>
+  <ion-icon name="arrow-forward"></ion-icon> Level Design<br>
+  <ion-icon name="arrow-forward"></ion-icon> Immersive Experience<br>
+</span>
+<!-- <center>
+  <h3> How Can You Find Me? </h3> </center>
+        <center>    <iframe
+        src="https://maps.google.com/maps?q=kanchanpur,%20bheemdatta&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+        id="gmap_canvas" frameborder="0" scrolling="no" style="width:100% ; height: 500px;"></iframe>
+</center> -->
+
+
+ <footer class="footer">
+  	 <div class="container">
+  	 	<div class="row">
+  	 		<div class="footer-col">
+  	 			<h4>Contact Me</h4>
+  	 			<ul>
+  	 				<li><a href="contact.html">Contact Me Here</a></li>
+  	 				
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>Important Links</h4>
+  	 			<ul>
+  	 				<li><a href="https://getbootstrap.com/" target="_blank">Bootstrap</a></li>
+  	 				<li><a href="https://tailwindcss.com/" target="_blank">Tailwind CSS</a></li>
+  	 				<li><a href="https://fontawesome.com/" target="_blank">Font Awesome</a></li>
+  	 				<li><a href="https://ionic.io/ionicons" target="_blank">Ion Icons</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>Have any question?</h4>
+  	 			<ul>
+  	 				<li><ion-icon name="call-outline"></ion-icon><a href="tel:9800606350">
+              <ion-icon name="call-outline"></ion-icon> +977-9800606350</a></li>
+  	 				<li><a href="mailto:infocodewithniraj@gmail.com">
+              <ion-icon name="mail"></ion-icon> infocodewithniraj@gmail.com</a></li>
+  	 				
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>Follow Me</h4>
+  	 			<div class="social-links">
+  	 				<a href="https://www.facebook.com/niraj.joshi.7355" target="_blank">
+              <i class="fab fa-facebook-f"></i></a>
+  	 				<a href="https://youtube.com/@CodeWithNiraj7?si=cseffzRFnGnSly9w" target="_blank">
+              <i class="fab fa-youtube"></i></a>
+  	 				<a href="https://www.instagram.com/nirajjoshi153/" targrt="_blank">
+              <i class="fab fa-instagram"></i></a>
+  	 				<a href="https://www.tiktok.com/@neerajjoshi001" targrt="_blank">
+              <i class="fab fa-tiktok"></i></a>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+  	 </div>
+
+
+
+    <p class="float-right" class="text-decoration-none">
+        <ion-icon name="home-outline" size="large"> </ion-icon>
+<font color="white"> <center>
+   <p> © 2023-All Rights Reserved | CodeWithNiraj.com</p> </center>
+  </font>
+  </footer>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
